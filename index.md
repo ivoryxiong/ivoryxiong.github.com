@@ -1,9 +1,7 @@
-﻿---
+---
 layout: page
-title: 煲仔饭
-tagline: 慢慢品味
+title: "Home"
+description: "blog from ivoryxiong"
 ---
 {% include JB/setup %}
-
 waiting ...
-
