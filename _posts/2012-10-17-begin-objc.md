@@ -18,7 +18,7 @@ sudo apt-get install gobjc gnusetup gnusetup-devel
 /usr/share/GNUstep/Makefiles/GNUstep.sh。
 {% endhighlight %}
 
-## hello word ##
+## hello world ##
 创建文件 hello.m
 {% highlight objc linenos %}
 #import <Foundation/Foundation.h>
