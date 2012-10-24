@@ -32,4 +32,14 @@ advertising
 netease
 RENN
 
+## 豆瓣书单 ##
+### 读过 ###
+<script type='text/javascript' src='http://www.douban.com/service/badge/49536988/?show=collection&n=120&columns=10&hidelogo=yes&hideself=yes&cat=book' >
+</script>
+
+### 在读 ###
+<script type='text/javascript' src='http://www.douban.com/service/badge/49536988/?show=dolist&n=8&columns=8&hidelogo=yes&hideself=yes&cat=book' >
+</script>
+
+## 喜欢的工具 ##
 
