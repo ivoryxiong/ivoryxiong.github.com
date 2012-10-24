@@ -3,34 +3,49 @@ layout: page
 title: "About"
 group: navigation
 description: "something about me"
+tags:
+    java
+    ad
+
 ---
 {% include JB/setup %}
-## 教育经历 ##
-Education experience
+## 教育经历 (Education Experience) ##
 
-2007年9月-2011年6月 : 计算机科学与技术学院网络工程专业
+*2007-09 -- 2011-06*
 
-Beijing university of posts and telecommunications undergraduate course Of college of computer science and technology network engineering
+>计算机科学与技术学院网络工程专业
+>
+> Beijing University of Posts and Telecommunications
+>
+> Undergraduate course Of college of computer science and technology 
+>
+> Network Engineering
 
-## 工作经历 ##
+## 工作经历 (Working Experience) ##
 
-working experience :
+*2012-07 -- now*
+> 软件工程师@无觅网
+>
+> software engineer @ WUMII
 
-2010-04 – 2011-04:
+*2011-04 -- 2012-06*
+> 广告平台java工程师@人人网
+>
+>java engineer, advertising platform @RENN
 
-广告研发工程师 实习@网易有道
+*2010-04 -- 2011-04*
 
-advertising r&d; engineers internship@youdao of Netease
-
-2011-04 - 2011-06:
-
-java engineer, advertising platform @ RENN
+> 实习广告研发工程师@网易有道
+>
+> advertising r&d; engineers internship@Youdao of Netease
 
 ## Tags ##
-java
-advertising
-netease
-RENN
+**C/C++**
+**Java**
+**Advertising**
+**NETEASE**
+**RENN**
+**WUMII**
 
 ## 豆瓣书单 ##
 ### 读过 ###
@@ -42,4 +57,3 @@ RENN
 </script>
 
 ## 喜欢的工具 ##
-
