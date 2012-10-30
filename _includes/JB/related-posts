@@ -3,7 +3,7 @@
 <script type="text/javascript">
     var wumiiPermaLink = "http://ivoryxiong.org{{page.url}}"; 
     var wumiiTitle = "{{page.title}}"; 
-    var wumiiTags = "{{page.tags}}";
+    var wumiiTags = " {% assign first_tag = nil %}{% for tag in page.tags %}{% if first_tag != null %},{% endif %} {% assign first_tag = tag %} {{tag}} {% endfor %}";
     var wumiiSitePrefix = "http://ivoryxiong.org/";
     var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
 </script>
