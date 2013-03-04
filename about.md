@@ -39,6 +39,9 @@ tags:
 >
 > advertising r&d; engineers internship@Youdao of Netease
 
+## 兴趣爱好 ##
+![](http://projecteuler.net/profile/ivoryxiong.png)
+
 ## Tags ##
 **C/C++**
 **Java**
