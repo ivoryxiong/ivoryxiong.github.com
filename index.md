@@ -1,7 +1,17 @@
 ---
 layout: page
-title: "Home"
+title: home
+tags:
+    - 技术
+    - ios
+    - java
+    - 编程
+    - 开发
+    - 计算广告
+    - 算法
+    - 系统架构
 description: "blog from ivoryxiong"
+
 ---
 {% include JB/setup %}
 <ul class="posts">
