@@ -2,7 +2,7 @@
 layout: post
 title: "业余生活杂想"
 description: "告别校园，步入社会后，业余生活是朝九晚五后的盼望，而如何利用这难得的闲暇更深刻地影响一个人的职业生涯。过完南方这如约而至雨季，BUPT便是两年前的回忆..."
-category: 
+category: life
 tags:
     - 业余生活
     - 职业
