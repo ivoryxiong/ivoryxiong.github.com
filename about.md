@@ -9,54 +9,26 @@ tags:
 
 ---
 {% include JB/setup %}
-## 教育经历 (Education Experience) ##
+**byr土著，码农一枚，朋友们都习惯叫"雕"【不要问为什么:(】，爱好不多，仅有的兴趣现在也成为了职业...在网易有道打过杂，也在人人网写过代码，目前在深圳折腾无觅阅读。**
 
-*2007-09 -- 2011-06*
+### contact ###
+![gmail](/imgs/gmail.gif)
 
->计算机科学与技术学院网络工程专业
->
-> Beijing University of Posts and Telecommunications
->
-> Undergraduate course Of college of computer science and technology 
->
-> Network Engineering
+### archive ###
+[![](http://projecteuler.net/profile/ivoryxiong.png)](http://projecteuler.net/) [![无觅阅读](http://www.wumii.com/images/app/download/logo.png)](https://itunes.apple.com/cn/app/wu-mi-yue-du-zhi-neng-cai/id593518746?mt=8) [![ivoryxiong](https://raw.github.com/github/media/master/octocats/blacktocat-32.png)](https://github.com/ivoryxiong)
 
-## 工作经历 (Working Experience) ##
+[![人人逛街](http://s.xnimg.cn/mall/common/img/ft_logo.gif)](http://j.renren.com)
 
-*2012-07 -- now*
-> 软件工程师@无觅网
->
-> software engineer @ WUMII
+### skills ###
+ **C/C++** **Java** **objective-c** **Advertising** **iOS**
 
-*2011-04 -- 2012-06*
-> 广告平台java工程师@人人网
->
->java engineer, advertising platform @RENN
-
-*2010-04 -- 2011-04*
-
-> 实习广告研发工程师@网易有道
->
-> advertising r&d; engineers internship@Youdao of Netease
-
-## 兴趣爱好 ##
-![](http://projecteuler.net/profile/ivoryxiong.png)
-
-## Tags ##
-**C/C++**
-**Java**
-**Advertising**
-**NETEASE**
-**RENN**
-**WUMII**
-
-## 豆瓣书单 ##
-### 读过 ###
+### 豆瓣书单 ###
+#### 读过 ####
 <script type='text/javascript' src='http://www.douban.com/service/badge/49536988/?show=collection&n=120&columns=10&hidelogo=yes&hideself=yes&cat=book' >
 </script>
 
-### 在读 ###
+#### 在读 ####
 <script type='text/javascript' src='http://www.douban.com/service/badge/49536988/?show=dolist&n=8&columns=8&hidelogo=yes&hideself=yes&cat=book' >
 </script>
 
-## 喜欢的工具 ##
+### 喜欢的工具 ###
