@@ -5,6 +5,7 @@ description: "在匆匆的生活旅途中，一直想用文字把自己的记忆
 category: life
 tags: 
     - 生活感悟
+
 ---
 {% include JB/setup %}
   
