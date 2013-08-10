@@ -8,7 +8,6 @@ tags:
     - xib
     - refactor
 ---
-{% include JB/setup %}
 ### 抛弃xib ###
 最近项目工期比较宽裕，做了比较多refactor的事情，最重要的一件事情是把项目中的很大一部分的nib/xib文件移除了。关于项目中是否应该使用IB的争论一直很多（如[reddit](http://www.reddit.com/r/programming/comments/15jjfi/why_i_dont_use_interface_builder/)），也没有好的结论。但对于团队开发而言，拒绝IB无疑是一个明智的选择，至少从目前的经历而言，使用nib/xib有以下不足之处：
 1. 不方便团队其他成员进行review，nib/xib文件是采用xml，目前主流的review工具（如[reviewborad](http://reviewboard.org)）支持不够好，比较难看明白。

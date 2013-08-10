@@ -3,12 +3,11 @@ layout: post
 title: "app反编译及敏感信息存储"
 description: "移动客户端的开发越来越流行，各种app不断出现，但app开发的一些准则慢慢被遗忘，导致各种问题app，其中信息泄漏便是一个问题。"
 category: tutorial
-tags: 
+tags:
     - decompile
     - ios
-    - sso 
+    - sso
 ---
-{% include JB/setup %}
 最近在做ios开发，属于刚入门，所以在github上看了一些app的原代码，发现很多代码写法及app设计都存在一些问题，感触比较深的是SINA微博的sso SDK及应用。
 ### 设计问题 ###
 sso ios版的sdk设计有一些问题，竟然要求使用应用从SINA处获得的key及secert，使用key能理解，需要使用secret则比较无法接受，这意味着开发者必须给所有的装有自己app的设备分发secret … 可能因为两者的实现原理不一样，但andriod版的sdk是不需要secert，这才是个合理的设计。
@@ -19,20 +18,22 @@ sso ios版的sdk设计有一些问题，竟然要求使用应用从SINA处获得
 s1. 没装itunes的在这里下载：[唱吧](http://www.appifan.com/app-509885060.html)
 
 s2. 解压
-{%highlight bash linenos %}
+
+``` bash
 unzip ktv.ipa
 cd Payload/ktv.app
-{% endhighlight %} 
+```
 
 #### 反编译二进制文件 ####
 使用otool查看二进制代码，找出可能的字符串常量
-{%highlight bash linenos %}
+
+```
 otool -v -arch armv7 -s __TEXT __cstring ktv > str.txt
 vim str.txt
-{% endhighlight %}
+```
 
 **sina的secret是32位的**，所在vim里面 __/[0-9a-zA-Z]\{32}__ ，可以找到几个候选项，再根据key的pattern，__/[0-9]\{10,12}__可以找到key，然后综合考虑下位置就可以找到了。上图为证：
-![账号信息](/imgs/ktv_crake_vim.png)
+![账号信息](/images/ktv_crake_vim.png)
 
 
 ### 收获感想 ###

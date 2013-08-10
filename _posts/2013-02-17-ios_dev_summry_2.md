@@ -3,12 +3,11 @@ layout: post
 title: "ios开发小结之app发布升级"
 description: "记录并总结下最近2个月ios开发中关于app审核及分布遇到的问题及想法"
 category: devops
-tags: 
+tags:
     - software engineering
     - ios
     - summry
 ---
-{% include JB/setup %}
 在近两个月的开发中，遇到了挺多问题的，几天加班加点，最后还是在年前发布并更新了一个版本，欢迎下载[无觅下载](https://itunes.apple.com/us/app/wu-mi-yue-du-zhi-neng-cai/id593518746?ls=1&mt=8)。
 
 最头疼的问题是提交app审核，之前的工程不太规范，导致一些文件icon没有设置好，直接validate就失败了几次。validate通过后便upload，但upload过程中又出错了，原因是java版本不对（xcode使用java类库进行上传），解决方法在见[stackoverflow上的回答](http://stackoverflow.com/questions/10011635/an-error-occurred-uploading-to-the-itunes-store-please-upgrade-java)。一切搞定后，还得对付国内的龟速网络，一个15M不到的ipa竟然上传了快半个小时，算下来速度连10Kb/s都不到（带宽可是20M的呀！），聊着天把ipa上传给app store都快晚上2点了，坑爹呀。再说说关于app审核发布的问题，“无觅阅读”因为metadata被rejected一次，原因在于我们的描述里出现了安卓这个词，话说apple这个政策也真是小家子气，这么封闭可别最后落个固步自封的境地呀。新app审核的时间大概在2周左右，主要是排队的时间长，花费了一周多的时间，真正审核的时间也就2-3天，更新app的审核周期更短些，我们两个版本都刚好花费1周的时间。另外需要注意的在创建版本时要选择“Hold for Developer Release ”，避免由于时差，app半夜就发布出去了，而导致运营和推广安排滞后。
@@ -21,7 +20,8 @@ tags:
 上面这点资料很少，但比较有用。从umeng分析工具和资料3知道，每次发布新版本后，都需要将archive和当前版本的代码保存下来以便日后分析crash log。
 
 对于国内开发者而言，除了提交app给app store，还可以提交给很多的越狱市场（目前国内知道的有5、6个），但一个个手动打包很麻烦，所以写了个脚本来做这件事情。
-{% highlight bash linenos %}
+
+``` bash
 #!/bin/sh
 on_fail() {
     echo "$*" >&2
@@ -74,6 +74,6 @@ do
 done
 echo "build successfully!"
 exit 0
+```
 
-{% endhighlight %}
 执行上述脚本必须安装xcode的command line tools，商店渠道保存在config/stores.dat文件中，而开发者证书则为config/production.mobileprovision。
