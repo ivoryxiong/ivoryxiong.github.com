@@ -6,7 +6,7 @@ category: devops
 tags:
     - cocoapods
     - Podfile
-    - iOS
+    - ios
 ---
 与众多iOS开发者一样，刚开始通过copy代码的方式引入第三方开源库到工程中，而对于自己维护的私有库，则通过submodule与subproject的方式维护。这样做的弊端很明显: 首先，不能及时更新第三方开源库的代码；其次，在主工程里容易形成多层工程嵌套工程的结构。作为一名有Java背景的开发者，在类Maven的cocoapods出现后，真是欣喜若狂，本文和朋友们分享一些使用经历及经验。
 
