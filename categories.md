@@ -1,5 +1,5 @@
 ---
 layout: categories
 permalink: /categories/index.html
-title: Categories
+title: 归档 
 ---

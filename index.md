@@ -1,5 +1,5 @@
 ---
 layout: post-index
 permalink: /index.html
-title: home
+title: 首页 
 ---

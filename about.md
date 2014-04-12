@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /about/index.html
-title: About me
-description: "something about me"
+title: 关于
+description: "一个码农的自我介绍"
 tags:
     java
     ad

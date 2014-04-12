@@ -1,5 +1,5 @@
 ---
 layout: tags
 permalink: /tags/index.html
-title: Tags
+title: 标签 
 ---
