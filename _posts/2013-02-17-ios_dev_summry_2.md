@@ -10,12 +10,12 @@ tags:
 ---
 在近两个月的开发中，遇到了挺多问题的，几天加班加点，最后还是在年前发布并更新了一个版本，欢迎下载[无觅下载](https://itunes.apple.com/us/app/wu-mi-yue-du-zhi-neng-cai/id593518746?ls=1&mt=8)。
 
-最头疼的问题是提交app审核，之前的工程不太规范，导致一些文件icon没有设置好，直接validate就失败了几次。validate通过后便upload，但upload过程中又出错了，原因是java版本不对（xcode使用java类库进行上传），解决方法在见[stackoverflow上的回答](http://stackoverflow.com/questions/10011635/an-error-occurred-uploading-to-the-itunes-store-please-upgrade-java)。一切搞定后，还得对付国内的龟速网络，一个15M不到的ipa竟然上传了快半个小时，算下来速度连10Kb/s都不到（带宽可是20M的呀！），聊着天把ipa上传给app store都快晚上2点了，坑爹呀。再说说关于app审核发布的问题，“无觅阅读”因为metadata被rejected一次，原因在于我们的描述里出现了安卓这个词，话说apple这个政策也真是小家子气，这么封闭可别最后落个固步自封的境地呀。新app审核的时间大概在2周左右，主要是排队的时间长，花费了一周多的时间，真正审核的时间也就2-3天，更新app的审核周期更短些，我们两个版本都刚好花费1周的时间。另外需要注意的在创建版本时要选择“Hold for Developer Release ”，避免由于时差，app半夜就发布出去了，而导致运营和推广安排滞后。
+最头疼的问题是提交app审核，之前的工程不太规范，导致一些文件icon没有设置好，直接validate就失败了几次。validate通过后便upload，但upload过程中又出错了，原因是java版本不对（xcode使用java类库进行上传），解决方法在见[stackoverflow上的回答](https://stackoverflow.com/questions/10011635/an-error-occurred-uploading-to-the-itunes-store-please-upgrade-java)。一切搞定后，还得对付国内的龟速网络，一个15M不到的ipa竟然上传了快半个小时，算下来速度连10Kb/s都不到（带宽可是20M的呀！），聊着天把ipa上传给app store都快晚上2点了，坑爹呀。再说说关于app审核发布的问题，“无觅阅读”因为metadata被rejected一次，原因在于我们的描述里出现了安卓这个词，话说apple这个政策也真是小家子气，这么封闭可别最后落个固步自封的境地呀。新app审核的时间大概在2周左右，主要是排队的时间长，花费了一周多的时间，真正审核的时间也就2-3天，更新app的审核周期更短些，我们两个版本都刚好花费1周的时间。另外需要注意的在创建版本时要选择“Hold for Developer Release ”，避免由于时差，app半夜就发布出去了，而导致运营和推广安排滞后。
 
 无觅是小团队，测试方面人力不足，做得不是很好，app推出后没有少挨用户骂。不断迭代，提高app质量是发布后开发人员的重要工作，而收集crash log是则是fix bug的第一步。我们在app中同时使用了umeng和GA两种统计工具，同时umeng还兼有收集crash log的用处。但umeng sdkv2.13之前的版本都存在Crash Log中dSYM UUID生成的bug，导致能看到错误日志，也无法将错误对应到具体代码。使用了umeng的分析工具，错误分析变得简单，但分析的基本原理还是要懂些（全是编译原理的东东），可以看看下面这些资料：
-> 1. [连接crash log的符号表](http://stackoverflow.com/questions/6248132/symbolicate-xcode4-crash-reports/6291663)
-> 2. [mac下反汇编工具](http://www.verydemo.com/demo_c134_i2411.html)
-> 3. [连接符号表的原理](http://stackoverflow.com/questions/13574933/ios-crash-reports-atos-not-working-as-expected)（这个刚好是umeng sdkv2.1.3之前版本的bug）
+> 1. [连接crash log的符号表](https://stackoverflow.com/questions/6248132/symbolicate-xcode4-crash-reports/6291663)
+> 2. [mac下反汇编工具](https://www.verydemo.com/demo_c134_i2411.html)
+> 3. [连接符号表的原理](https://stackoverflow.com/questions/13574933/ios-crash-reports-atos-not-working-as-expected)（这个刚好是umeng sdkv2.1.3之前版本的bug）
 
 上面这点资料很少，但比较有用。从umeng分析工具和资料3知道，每次发布新版本后，都需要将archive和当前版本的代码保存下来以便日后分析crash log。
 

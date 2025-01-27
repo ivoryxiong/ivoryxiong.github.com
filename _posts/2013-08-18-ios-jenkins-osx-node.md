@@ -19,7 +19,7 @@ Jenkins官网的[Step-By-Step教程](https://wiki.jenkins-ci.org/display/JENKINS
 1. 最好新建一个jenkins用户，将"Remote FS Root"设置为其home目录/Users/jenkins
 2. Usage选"Leave this machine for tied jobs only"
 3.  Launch Methods 教程建议选Java Web Start，理由是Master不需要知道Slave Node的地址，不过对于公司内部网络而言，这些配置都比较固定，而且很多会用https协议替代http，所以建议使用通过ssh启动。
-4.  配置SSH，使两台机器之间SSH登录无需密码，具体步骤见：[SSH login without password](http://www.linuxproblem.org/art_9.html)。生成key后，在"系统管理"-> "Manage Credentials" 里Add Credentials，并选"SSH Username with private key"
+4.  配置SSH，使两台机器之间SSH登录无需密码，具体步骤见：[SSH login without password](https://www.linuxproblem.org/art_9.html)。生成key后，在"系统管理"-> "Manage Credentials" 里Add Credentials，并选"SSH Username with private key"
 
 配置好全部后，直接在"系统管理" -> "管理节点"中选中新添加节点并启动
 
@@ -48,4 +48,4 @@ ${WORKSPACE}/build.sh dis 9.9.9
 
 #### Reference: ####
 1.  [Jenkins Wiki & Plugins](https://wiki.jenkins-ci.org/)
-2.  [Linux Problems](http://www.linuxproblem.org/) 
+2.  [Linux Problems](https://www.linuxproblem.org/) 

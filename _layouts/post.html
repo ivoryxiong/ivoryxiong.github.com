@@ -8,14 +8,14 @@
     <head>
         {% include head.html %}
     </head>
-    <body class="article" itemscope itemtype="http://schema.org/WebPage">
+    <body class="article" itemscope itemtype="https://schema.org/WebPage">
         {% include chrome-frame.html %}
         {% include navigation.html %}
-        <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+        <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Blog">
             <div class="article-author-top">
                 {% include author-bio.html %}
             </div>
-            <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <article itemscope itemtype="https://schema.org/BlogPosting" itemprop="blogPost">
                 <div class="headline-wrap">
                     <h1 itemprop="headline">{{ page.title }}</h1>
                     <h2>{{ page.tagline }}</h2>
@@ -35,7 +35,7 @@
                             </span>
                             <br>
                             <span class="license">
-                            Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+                            Published under <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
                             </span>
                             {% if page.categories %}
                             <span class="categories">
@@ -62,15 +62,15 @@
 <script type="text/javascript" id="wumiiRelatedItems"></script>
 
 <script type="text/javascript">
-    var wumiiPermaLink = "http://ivoryxiong.org{{page.url}}";
+    var wumiiPermaLink = "https://ivoryxiong.org{{page.url}}";
     var wumiiTitle = "{{page.title}}";
     var wumiiTags = " {% assign first_tag = nil %}{% for tag in page.tags %}{% if first_tag != null %},{% endif %} {% assign first_tag = tag %} {{tag}} {% endfor %}";
-    var wumiiSitePrefix = "http://ivoryxiong.org/";
+    var wumiiSitePrefix = "https://ivoryxiong.org/";
     var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
 </script>
-<script type="text/javascript" src="http://widget.wumii.com/ext/relatedItemsWidget"></script>
-<a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
-    <img src="http://static.wumii.cn/images/pixel.png" alt="wumii related posts" style="border:0;padding:0;margin:0;" />
+<script type="text/javascript" src="https://widget.wumii.com/ext/relatedItemsWidget"></script>
+<a href="https://www.wumii.com/widget/relatedItems" style="border:0;">
+    <img src="https://static.wumii.cn/images/pixel.png" alt="wumii related posts" style="border:0;padding:0;margin:0;" />
 </a>
 </div>
             <div id="disqus_thread" class="comment"></div>
@@ -80,7 +80,7 @@
                 /* * * DON'T EDIT BELOW THIS LINE * * */
                 (function() {
                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                 })();
             </script>

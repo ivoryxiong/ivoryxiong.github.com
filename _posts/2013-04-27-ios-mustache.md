@@ -7,9 +7,9 @@ tags:
     - mustache
     - template engine
 ---
-模板引擎（template engine） 对于开发者而言都不陌生，常用的有FreeMaker、Velocity、Smarty等（详见[wikipedia](http://en.wikipedia.org/wiki/Template_engine_\(web\))），多用于动态渲染web页面。用于渲染web页面的模板引擎功能方面都比较强大，支持大部分的逻辑，可以说是一门小型语言。在web渲染的应用场景外，还有许多场景需要用到模板引擎，比如运维人员向服务器集群分发具有目标机器信息的配置、广告系统根据用户配置实例化不用的广告样式（好吧，其实这个是web应用…）等，在这些场景下，可能需要的只是替换设定的变量再加上点简单的判断逻辑，那么FreeMaker、Velocity显得就大材小用。
+模板引擎（template engine） 对于开发者而言都不陌生，常用的有FreeMaker、Velocity、Smarty等（详见[wikipedia](https://en.wikipedia.org/wiki/Template_engine_\(web\))），多用于动态渲染web页面。用于渲染web页面的模板引擎功能方面都比较强大，支持大部分的逻辑，可以说是一门小型语言。在web渲染的应用场景外，还有许多场景需要用到模板引擎，比如运维人员向服务器集群分发具有目标机器信息的配置、广告系统根据用户配置实例化不用的广告样式（好吧，其实这个是web应用…）等，在这些场景下，可能需要的只是替换设定的变量再加上点简单的判断逻辑，那么FreeMaker、Velocity显得就大材小用。
 
-[mustache](http://mustache.github.io/)便是一个适用于上述场景的简单、轻量的跨平台的模板引擎，只提供简单的替换、循环、判断等必要功能。由于逻辑简单，基本上5分钟之内便可以拿来用，而且主页有一个[demo](http://mustache.github.io/#demo),马上拿来用吧！ 包括变量在内，mustache只支持[6种tag](http://mustache.github.io/mustache.5.html)（够简单吧:)），虽然简单，但基本覆盖了常用的功能，而且支持Lambdas可以算是一个很大的亮点吧！
+[mustache](https://mustache.github.io/)便是一个适用于上述场景的简单、轻量的跨平台的模板引擎，只提供简单的替换、循环、判断等必要功能。由于逻辑简单，基本上5分钟之内便可以拿来用，而且主页有一个[demo](https://mustache.github.io/#demo),马上拿来用吧！ 包括变量在内，mustache只支持[6种tag](https://mustache.github.io/mustache.5.html)（够简单吧:)），虽然简单，但基本覆盖了常用的功能，而且支持Lambdas可以算是一个很大的亮点吧！
 
    最近在ios项目中是使用mustache根据用户配置生成对应的xcode project中的项目文件app-info.plist和自定义的配置文件config.plist。这些工作是在build project之前做的，所以写了一个python脚本使用mustache生成对应文件，附上作为参考：
 
