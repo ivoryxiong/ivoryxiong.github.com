@@ -12,10 +12,10 @@ tags:
 ### 设计问题 ###
 sso ios版的sdk设计有一些问题，竟然要求使用应用从SINA处获得的key及secert，使用key能理解，需要使用secret则比较无法接受，这意味着开发者必须给所有的装有自己app的设备分发secret … 可能因为两者的实现原理不一样，但andriod版的sdk是不需要secert，这才是个合理的设计。
 ### 反编译案例 ###
-[新浪移动应用SSO授权](http://open.weibo.com/wiki/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8SSO%E6%8E%88%E6%9D%83)罗列了几个最先使用SSO的应用，因项目需要，想看下他们怎么存储secret的。没有源代码，只能找个应用来反编译了，就拿唱吧…
+[新浪移动应用SSO授权](https://open.weibo.com/wiki/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8SSO%E6%8E%88%E6%9D%83)罗列了几个最先使用SSO的应用，因项目需要，想看下他们怎么存储secret的。没有源代码，只能找个应用来反编译了，就拿唱吧…
 
 #### 下载并解压IPA ####
-s1. 没装itunes的在这里下载：[唱吧](http://www.appifan.com/app-509885060.html)
+s1. 没装itunes的在这里下载：[唱吧](https://www.appifan.com/app-509885060.html)
 
 s2. 解压
 
@@ -41,5 +41,5 @@ vim str.txt
 2. 对外发布的sdk尽量设计合理些，避免导致开发商的信息泄漏
 
 ### referer ###
-1. [otool](http://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/otool.1.html)
-2. [MachORuntime](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/MachORuntime/Reference/reference.html)
+1. [otool](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/otool.1.html)
+2. [MachORuntime](https://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/MachORuntime/Reference/reference.html)

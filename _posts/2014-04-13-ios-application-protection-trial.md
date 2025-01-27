@@ -9,7 +9,7 @@ tags:
     - GDB
     - ptrace
 ---
-这几天[OpenSSL](https://www.openssl.org/)的[Heartbleed](http://heartbleed.com/)问题引起业界极大的反响，阿雕也跟风**简单**聊聊iOS下软件攻防。
+这几天[OpenSSL](https://www.openssl.org/)的[Heartbleed](https://heartbleed.com/)问题引起业界极大的反响，阿雕也跟风**简单**聊聊iOS下软件攻防。
 
 
 开发者对安全的理解和安全从业人员理解不一样，开发者只关心软件上的问题，系统层面基本是不会去关心，所以在阿雕眼里，App上的敏感信息没被暴露就是基本的安全。App一般不会存储用户帐户信息，所以敏感信息较少，能想到的大概有：
@@ -21,7 +21,7 @@ tags:
 对应的防护措施其实分为传输保护及存储保护，传输保护常用且成熟的方案就是加密，比如采用Https或自定义加密算法【见[iOS开发总结之Https&SSL Pinning](devops/2014/03/02/ios-https-ssl-pinning/)】。而存储保护其实也是加密（不过是变着法子加密），防止用户通过逆向工程获取到信息，另外是防止用户调试，避免被暴力破解（比如密码锁）。
 
 ##### 防止逆向工程 #####
-逆向工程具体点是反编译，[百宝箱](/toolbox)里提到阿雕用**Hopper**反编译二进制文件,iOS上二进制文件的格式是[Mach-O](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/MachORuntime/Reference/reference.html)【另见[objc.io的文章](http://www.objc.io/issue-6/mach-o-executables.html)】。IPA里的二进制文件经过Hopper反编译后，能可视化文件的结构，存储的敏感信息如果以字符串常量写在程序中则会暴露无疑. 
+逆向工程具体点是反编译，[百宝箱](/toolbox)里提到阿雕用**Hopper**反编译二进制文件,iOS上二进制文件的格式是[Mach-O](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/MachORuntime/Reference/reference.html)【另见[objc.io的文章](https://www.objc.io/issue-6/mach-o-executables.html)】。IPA里的二进制文件经过Hopper反编译后，能可视化文件的结构，存储的敏感信息如果以字符串常量写在程序中则会暴露无疑. 
 看一个例子：
 ![微博反编译](/images/hopper_weibo.jpg)
 从图中可以看到，微博官方客户端的类名及方法暴露无疑，这为hacker调试二进制程序提供很大的便利。但这个解决办法比较简单，将编译选项DEPLOYMENT_POSTPROCESSING设置为YES，Xcode在编译时便会去除调试信息，再反编译将不能如此简单看到程序使用的库、类名、方法。

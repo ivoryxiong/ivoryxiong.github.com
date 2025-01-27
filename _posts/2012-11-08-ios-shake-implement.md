@@ -75,4 +75,4 @@ tags: [ios, shake]
 ```
 
 ## 使用场景 ##
-大多数场景下，以上两种实现方式效果都一样。在一些特殊的场景中，第二种实现方式会显得不够健壮，如问题：[在tabbar来回切换后晃动检测失效](http://www.cocoachina.com/ask/questions/show/56190)，但使用NSNotificationCenter的实现方式则能正常工作，具体原因还需探究。
+大多数场景下，以上两种实现方式效果都一样。在一些特殊的场景中，第二种实现方式会显得不够健壮，如问题：[在tabbar来回切换后晃动检测失效](https://www.cocoachina.com/ask/questions/show/56190)，但使用NSNotificationCenter的实现方式则能正常工作，具体原因还需探究。

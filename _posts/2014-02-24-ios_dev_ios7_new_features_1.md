@@ -21,8 +21,8 @@ tags:
 
 
 ### 阅读资料 ###
-* [WWDC 2013 Session笔记 - iOS7中的多任务](http://onevcat.com/2013/08/ios7-background-multitask/)
-* [Multitasking in iOS 7](http://www.objc.io/issue-5/multitasking.html)
-* [View Controller Transitions](http://www.objc.io/issue-5/view-controller-transitions.html)
-* [iOS 7 Tutorial Series: Custom Navigation Transitions & More](http://www.captechconsulting.com/blog/tyler-tillage/ios-7-tutorial-series-custom-navigation-transitions-more)
+* [WWDC 2013 Session笔记 - iOS7中的多任务](https://onevcat.com/2013/08/ios7-background-multitask/)
+* [Multitasking in iOS 7](https://www.objc.io/issue-5/multitasking.html)
+* [View Controller Transitions](https://www.objc.io/issue-5/view-controller-transitions.html)
+* [iOS 7 Tutorial Series: Custom Navigation Transitions & More](https://www.captechconsulting.com/blog/tyler-tillage/ios-7-tutorial-series-custom-navigation-transitions-more)
 * [Quartz 2D Transform](https://developer.apple.com/library/mac/documentation/graphicsimaging/conceptual/drawingwithquartz2d/dq_affine/dq_affine.html#//apple_ref/doc/uid/TP30001066-CH204-CJBECIAD)

@@ -25,4 +25,4 @@ tags:
 }
 ```
 
-但如果你想兼容更多版本的设备或者说只想设置在App内有效，那么上面的方法便不适用了，首先那段代码只支持ios5以上，其次SDK有个BUG或者设计失误（见[stackoverflow](http://stackoverflow.com/questions/8316358/)）。传统的做法是将一个backgroundColor是blackColor的UIView的加在UIViewController的view上面，然后通过调节该view的alpha值来调节亮度,demo代码见：[Brightness@GITHUB](https://github.com/ivoryxiong/Brightness)
+但如果你想兼容更多版本的设备或者说只想设置在App内有效，那么上面的方法便不适用了，首先那段代码只支持ios5以上，其次SDK有个BUG或者设计失误（见[stackoverflow](https://stackoverflow.com/questions/8316358/)）。传统的做法是将一个backgroundColor是blackColor的UIView的加在UIViewController的view上面，然后通过调节该view的alpha值来调节亮度,demo代码见：[Brightness@GITHUB](https://github.com/ivoryxiong/Brightness)

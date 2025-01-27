@@ -8,13 +8,13 @@
     <head>
         {% include head.html %}
     </head>
-    <body class="articles" itemscope itemtype="http://schema.org/WebPage">
+    <body class="articles" itemscope itemtype="https://schema.org/WebPage">
         {% include chrome-frame.html %}
         {% include navigation.html %}
         <div class="article-author-top">
             {% include author-bio.html %}
         </div>
-        <article id="index" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+        <article id="index" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Blog">
             <ul class="listing">
                 {% for category in site.categories  %} 
                 <li class="listing-seperator" id="{{ category[0] }}-ref">{{ category[0] }}</li>

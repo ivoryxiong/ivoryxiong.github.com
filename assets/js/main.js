@@ -3,9 +3,9 @@
 /*!
 * FitVids 1.0
 *
-* Copyright 2011, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
-* Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
-* Released under the WTFPL license - http://sam.zoy.org/wtfpl/
+* Copyright 2011, Chris Coyier - https://css-tricks.com + Dave Rupert - https://daverupert.com
+* Credit to Thierry Koblentz - https://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+* Released under the WTFPL license - https://sam.zoy.org/wtfpl/
 *
 * Date: Thu Sept 01 18:00:00 2011 -0500
 */
@@ -81,7 +81,7 @@
 })( jQuery );
 
 /*! Magnific Popup - v0.8.9 - 2013-06-04
-* http://dimsemenov.com/plugins/magnific-popup/
+* https://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2013 Dmitry Semenov; */
 ;(function($) {
 
@@ -888,7 +888,7 @@ $.magnificPopup = {
   defaults: {   
 
     // Info about options is in docs:
-    // http://dimsemenov.com/plugins/magnific-popup/documentation.html#options
+    // https://dimsemenov.com/plugins/magnific-popup/documentation.html#options
     
     disableOn: 0, 
 

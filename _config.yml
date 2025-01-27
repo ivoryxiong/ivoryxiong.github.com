@@ -44,7 +44,7 @@ links:
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:year/:month/:day/:title
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Hong_Kong
 future:      true
 pygments:    true
