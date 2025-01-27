@@ -4,22 +4,18 @@ description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
 url:
 
+plugins:
+  - jekyll-gist
+
 # Owner/author information
 owner:
   name:           ivoryxiong
   avatar:         xiong.jpg
-  bio:            "SDE@WUMII"
+  bio:            "TLM@PonyAI"
   email:          ivoryxiong@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:
-  facebook:
   github: ivoryxiong
   linkedin:
-  instagram:
-  lastfm:
-  tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:  https://plus.google.com/100260282622512499798?ref=author
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: 'UA-34354303-1'
@@ -48,8 +44,8 @@ permalink:   /:categories/:year/:month/:day/:title
 timezone:    Asia/Hong_Kong
 future:      true
 pygments:    true
-markdown:    redcarpet
-redcarpet:
+markdown:    kramdown
+kramdown:
   extensions: [fenced_code_blocks]
 
 include: [".htaccess"]
